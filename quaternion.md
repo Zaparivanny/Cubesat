@@ -13,3 +13,34 @@ $$ \bf{q} = \begin{bmatrix} \it{q}_0 & \it{q}_1 & \it{q}_2 & \it{q}_3 \end{bmatr
 
 #### Операции над кватернионами
 
+* Кватернионное сопряжение (conjugating) $ \overline{\bf{q}} = \begin{bmatrix} \it{q}_0 & -\it{q}_1 & -\it{q}_2 & -\it{q}_3 \end{bmatrix}  $
+* Кватернионное  сложение (addition). Сложение кватернионов коммутативно.
+$$ {\bf{q + p}} = \begin{bmatrix} \it{q}_0 + \it{p}_0 \\ \it{q}_1 + \it{p}_1 \\ \it{q}_2 + \it{p}_2 \\ \it{q}_3 + \it{p}_3 \end{bmatrix}  $$
+Аналогично определяется и кватернионное вычитание (subtraction)
+$$ {\bf{q - p}} = \begin{bmatrix} \it{q}_0 - \it{p}_0 \\ \it{q}_1 - \it{p}_1 \\ \it{q}_2 - \it{p}_2 \\ \it{q}_3 - \it{p}_3 \end{bmatrix}  $$
+Справедливы следующие равенства: 
+$$ \bf{\overline{p + q}} = \overline{p} + \overline{q} $$ $$ \bf{\overline{p - q}} = \overline{p} - \overline{q} $$
+* Умножение числа на кватернион или кватерниона на число
+$$ \it a \cdot \bf{q} = \bf{q} \cdot \it a = \begin{bmatrix} \it a \cdot \it{q}_0 \\ \it a \cdot \it{q}_1 \\ \it a \cdot \it{q}_2 \\ \it a \cdot \it{q}_3 \end{bmatrix}  $$
+
+ * Кватернионное  умножение (quaternion multiplication, Grassmann multiplication). В  результате  кватернионного  умножения  получается  кватернион.  Кватернионное 
+умножение  некоммутативно
+
+$$ \bf{q} \circ \bf{p} = 
+\begin{bmatrix} 
+    \it q_0 \cdot p_0 - q_1 \cdot p_1 - q_2 \cdot p_2 - q_3 \cdot p_3 \\ 
+    \it q_0 \cdot p_1 + q_1 \cdot p_0 + q_2 \cdot p_3 - q_3 \cdot p_2 \\ 
+    \it q_0 \cdot p_2 - q_1 \cdot p_3 + q_2 \cdot p_0 + q_3 \cdot p_1 \\ 
+    \it q_0 \cdot p_3 + q_1 \cdot p_2 - q_2 \cdot p_1 + q_3 \cdot p_0 \\ 
+\end{bmatrix}  $$
+
+* Умножение кватернионов ассоциативно
+$$ \bf{q} \circ \bf{p} \circ \bf{r} = (q \circ p) \circ r = q \circ (p \circ r) $$
+* Умножение кватернионов дистрибутивно по отношению к суммированию:
+$$ \bf{q} \circ (\bf{p} + \bf{r}) = (q \circ p) + (q \circ r)$$ 
+* Сопряженное значение от произведения двух кватернионов равно произведению их сопряженных значений, взятых в обратном порядке
+ $$ \overline {\bf{q} \circ \bf{p} } = \overline {\bf q} \circ \overline {\bf p} $$ 
+ * Норма произведения двух кватернионов равна произведению норм сомножителей: 
+  $$ ||\bf{q} \circ \bf{p} || = ||{\bf q}|| \cdot || {\bf p} || $$ 
+  Это утверждение далеко не тривиально и представляет собой одно из замечательных свойств  кватернионов. Оно известно как тождество о четырех квадратах: произведение 
+сумм четырех квадратов является суммой четырех квадратов
